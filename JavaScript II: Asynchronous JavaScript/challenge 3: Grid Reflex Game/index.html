@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Reflex Game</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        main {
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h2 {
+            padding: 10px;
+            margin: 10px;
+        }
+
+        div {
+            height: 500px;
+            width: 500px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            margin: 20px;
+        }
+
+        button {
+            background-color: gray;
+            cursor: pointer;
+        }
+
+        button:disabled {
+            opacity: 0.6;
+            background-color: rgb(141, 139, 139);
+            border-color: #d0d0d0;
+            cursor: not-allowed;
+        }
+
+        .active {
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <h2>Score: <span id="score">0</span></h2>
+        <div>
+            <button></button>
+            <button></button>
+            <button></button>
+            <button></button>
+            <button></button>
+            <button></button>
+            <button></button>
+            <button></button>
+            <button></button>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
