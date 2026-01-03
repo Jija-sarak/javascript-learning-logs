@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real-Time Form Validator with Summary</title>
+</head>
+<body>
+    <form id="registerForm">
+        <label for="nameInput">Name:</label>
+        <input type="text" id="nameInput" placeholder="Enter your name" required>
+        <p></p>
+        <label for="emailInput">Email:</label>
+        <input type="email" id="emailInput" placeholder="Enter an email" required>
+        <p></p>
+        <label for="passwordInput">Password:</label>
+        <input type="password" id="passwordInput" placeholder="Enter a Password" required>
+        <p></p>
+        <label for="confirmPasswordInput">Confirm Password:</label>
+        <input type="password" id="confirmPasswordInput" placeholder="Enter a Password" required>
+        <p></p>
+
+        <button type="submit">Submit</button>
+    </form>
+    <div id="summarySection"></div>
+    <script src="script.js"></script>
+</body>
+</html>
